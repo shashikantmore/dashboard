@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" class="h-100">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" th:href="@{webjars/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{webjars/datatables/css/dataTables.bootstrap5.min.css}">
+    <link rel="stylesheet" th:href="@{webjars/bootstrap-datepicker/css/bootstrap-datepicker3.min.css}">
+    <link rel="stylesheet" th:href="@{webjars/font-awesome/css/fontawesome.min.css}">
+    <link rel="stylesheet" th:href="@{webjars/font-awesome/css/solid.min.css}">
+    <link rel="stylesheet" th:href="@{css/main.css}"/>
+
+</head>
+<body class="d-flex flex-column h-100">
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+    </nav>
+</div>
+<main class="flex-shrink-0">
+    <div class="container">
+        <div layout:fragment="content">
+            <p>Body part</p>
+        </div>
+    </div>
+</main>
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+        <span class="text-muted">&copy; 2022 Business Name. All rights reserved.</span>
+    </div>
+</footer>
+
+<script type="text/javascript" th:src="@{webjars/jquery/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{webjars/datatables/js/jquery.dataTables.min.js}"></script>
+<script type="text/javascript" th:src="@{webjars/datatables/js/dataTables.bootstrap5.min.js}"></script>
+<script type="text/javascript" th:src="@{webjars/bootstrap-datepicker/js/bootstrap-datepicker.min.js}"></script>
+<script type="text/javascript" th:src="@{webjars/bootstrap-timepicker/js/bootstrap-timepicker.js}"></script>
+<script type="text/javascript" th:src="@{js/main.js}"></script>
+</body>
+</html>
